@@ -9,11 +9,11 @@ function Nav() {
   const [activeNav, SetAcctiveNav] = useState('#')
   return (
     <nav> 
-      <a href='#' className={activeNav === '#' ? 'active' : ''}><AiOutlineHome/></a>
-      <a href='#about'><AiOutlineUser/></a>
-      <a href='#experience'><BiBook/></a>
-      <a href='#services'><RiServiceLine/></a>
-      <a href='#contact'><BiMessageDetail/></a>
+      <a href='#' onClick={() => SetAcctiveNav('#')} className={activeNav === '#' ? 'active' : ''}><AiOutlineHome/></a>
+      <a href='#about' onClick={() => SetAcctiveNav('#about')} className={activeNav === '#about' ? 'active' : ''}><AiOutlineUser/></a>
+      <a href='#experience' onClick={() => SetAcctiveNav('#experience')} className={activeNav === '#experience' ? 'active' : ''}><BiBook/></a>
+      <a href='#services' onClick={() => SetAcctiveNav('#services')} className={activeNav === '#services' ? 'active' : ''}><RiServiceLine/></a>
+      <a href='#contact' onClick={() => SetAcctiveNav('#contact')} className={activeNav === '#contact' ? 'active' : ''}><BiMessageDetail/></a>
     </nav>
   )
 }

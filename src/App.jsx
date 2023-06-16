@@ -13,9 +13,9 @@ const App = () => {
   return (
     <>
       <Header/>
+      <About/>
       <Nav/>
       <Contact/>
-      <About/>
       <Services/>
       <Testimonials/>
       <Portfolio/>
